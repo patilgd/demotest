@@ -5,6 +5,7 @@ steps:
   args:
   - 'build'
   - 'gcr.io/$PROJECT_ID/wns:$SHORT_SHA'
+  .
   
 
 # This step pushes the image to Container Registry
