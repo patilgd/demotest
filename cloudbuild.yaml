@@ -6,8 +6,8 @@ steps:
 - name: "gcr.io/cloud-builders/docker"
   args: ["push", "gcr.io/$PROJECT_ID/wns:$SHORT_SHA"]
   # deploy container image to GKE
- - name: "gcr.io/cloud-builders/gke-deploy"
-   args:
+- name: "gcr.io/cloud-builders/gke-deploy"
+  args:
    - run
    - --filename=./testapp/deployment.yaml
    - --image=gcr.io/$PROJECT_ID/wns:$SHORT_SHA
