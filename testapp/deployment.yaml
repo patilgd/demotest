@@ -13,7 +13,7 @@ spec:
         app: angularapp
     spec:
       containers:
-      - name: simple-app
+      - name: wns-sha256-1
         image: gcr.io/playground-s-11-799c3f06/wns:sha256:1ed1e17ccabb09038cfb8a965337ebcda51ef9e9d32082164c502d44d9731a02
         resources:
           limits:
